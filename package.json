@@ -1,0 +1,22 @@
+{
+  "name": "blacksmith",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build:zed": "bun run scripts/build-zed-theme.ts",
+    "build:warp": "bun run scripts/build-warp-theme.ts",
+    "build:lazygit": "bun run scripts/build-lazygit-theme.ts",
+    "build:pi": "bun run scripts/build-pi-theme.ts",
+    "build:preview": "bun run scripts/build-token-preview.ts",
+    "build:all": "bun run build:preview && bun run build:zed && bun run build:warp && bun run build:lazygit && bun run build:pi"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "react": "^19.0.0",
+    "@types/react": "^19.0.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}

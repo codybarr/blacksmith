@@ -1,0 +1,50 @@
+{
+  "name": "Blacksmith",
+  "colors": {
+    "bg.0": "#191918",
+    "bg.1": "#1E1E1D",
+    "bg.2": "#272726",
+    "bg.3": "#333331",
+
+    "fg.0": "#FFFDF7",
+    "fg.1": "#F0E8D8",
+    "fg.2": "#C8BCA5",
+    "fg.3": "#9D927F",
+
+    "accent.0": "#FFE14D",
+    "accent.1": "#FFC400",
+    "accent.2": "#FFAA00",
+    "accent.3": "#B87400",
+
+    "status.error": "#FF4D6D",
+    "status.warning": "#FFB703",
+    "status.success": "#00D1A8",
+    "status.info": "#4CC9FF",
+
+    "ui.guide.active": "#5A5852",
+    "ui.selection.background": "#FFE14D",
+    "ui.selection.background.terminal": "#9A6200",
+    "ui.selection.foreground": "#191918",
+    "ui.cursor": "#FFE14D",
+
+    "terminal.bright_foreground": "#FFFDF7",
+    "terminal.ansi.magenta": "#FF4FD8",
+    "terminal.ansi.cyan": "#5CF2FF",
+    "terminal.ansi.bright_red": "#FF6B6B",
+    "terminal.ansi.bright_green": "#30E3B5",
+    "terminal.ansi.bright_yellow": "#FFE14D",
+    "terminal.ansi.bright_blue": "#66A3FF",
+    "terminal.ansi.bright_magenta": "#FF6AE6",
+    "terminal.ansi.bright_cyan": "#8AF7FF",
+    "terminal.ansi.bright_white": "#FFFDF7",
+
+    "syntax.keyword": "#66A3FF",
+    "syntax.function": "#FFE14D",
+    "syntax.string": "#FFD166",
+    "syntax.number": "#FFB347",
+    "syntax.comment.doc": "#9E9481",
+    "syntax.variable.parameter": "#FFF6E6",
+    "syntax.property": "#FFCA28",
+    "syntax.string.escape": "#FFF08A"
+  }
+}
