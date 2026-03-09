@@ -30,12 +30,47 @@ bun run build:pi
 bun run build:all
 ```
 
+## Create a GitHub release
+
+This repo includes a release script that builds the themes, bumps `package.json`, creates a git tag, and pushes the branch + tag to GitHub. A GitHub Actions workflow then automatically publishes the GitHub release from the pushed tag and attaches the generated artifacts.
+
+```bash
+bun run release -- patch
+bun run release -- minor
+bun run release -- 1.2.0
+```
+
+Optional flags:
+
+- `--allow-dirty` to skip the clean-working-tree check
+
+Requirements:
+
+- your current branch must already be pushed to `origin`
+- GitHub Actions must be enabled for the repository
+
+Workflow:
+
+- `.github/workflows/release.yml` runs on tags matching `v*`
+- it installs dependencies, runs `bun run build:all`, and publishes a GitHub release with generated notes
+
 Generated files:
 
 - `dist/zed/blacksmith.json`
 - `dist/warp/blacksmith.yaml`
 - `dist/lazygit/blacksmith.yml`
 - `dist/pi/blacksmith.json`
+
+## Install in Zed
+
+For a local/manual Zed install, copy the generated theme into your Zed themes directory:
+
+```bash
+mkdir -p ~/.config/zed/themes
+cp dist/zed/blacksmith.json ~/.config/zed/themes/
+```
+
+Then restart Zed or reload the window, open the theme picker, and select **Blacksmith**.
 
 ## Install in Warp
 

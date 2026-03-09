@@ -1,5 +1,6 @@
 {
   "name": "blacksmith",
+  "version": "0.1.0",
   "module": "index.ts",
   "type": "module",
   "private": true,
@@ -9,7 +10,8 @@
     "build:lazygit": "bun run scripts/build-lazygit-theme.ts",
     "build:pi": "bun run scripts/build-pi-theme.ts",
     "build:preview": "bun run scripts/build-token-preview.ts",
-    "build:all": "bun run build:preview && bun run build:zed && bun run build:warp && bun run build:lazygit && bun run build:pi"
+    "build:all": "bun run build:preview && bun run build:zed && bun run build:warp && bun run build:lazygit && bun run build:pi",
+    "release": "bun run scripts/create-github-release.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",

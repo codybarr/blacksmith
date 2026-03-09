@@ -25,7 +25,7 @@ const yaml = [
   `    'Cody Barr': '${resolveColor("status.info")}'`,
   "  theme:",
   ...yamlList("activeBorderColor", [resolveColor("accent.1"), "bold"], 2),
-  ...yamlList("inactiveBorderColor", [resolveColor("fg.0")], 2),
+  ...yamlList("inactiveBorderColor", [resolveColor("bg.3")], 2),
   ...yamlList("searchingActiveBorderColor", [resolveColor("status.info"), "bold"], 2),
   ...yamlList("optionsTextColor", [resolveColor("syntax.keyword")], 2),
   ...yamlList("selectedLineBgColor", [resolveColor("ui.selection.background.terminal")], 2),
@@ -35,7 +35,7 @@ const yaml = [
   ...yamlList("markedBaseCommitFgColor", [resolveColor("ui.selection.foreground")], 2),
   ...yamlList("markedBaseCommitBgColor", [resolveColor("accent.0")], 2),
   ...yamlList("unstagedChangesColor", [resolveColor("status.warning")], 2),
-  ...yamlList("defaultFgColor", [resolveColor("fg.0")], 2),
+  ...yamlList("defaultFgColor", [resolveColor("accent.0")], 2),
 ].join("\n");
 
 const outputUrl = new URL("../dist/lazygit/blacksmith.yml", import.meta.url);
