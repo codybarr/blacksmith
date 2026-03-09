@@ -20,6 +20,52 @@ Blacksmith is a high-contrast (but not harsh) developer theme built around rich 
 - [pi themes](https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/themes.md)
 - [Lazygit config and theming](https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md)
 
+## Install
+
+<details>
+<summary><strong>Zed</strong></summary>
+
+```bash
+mkdir -p ~/.config/zed/themes && curl -fL https://github.com/codybarr/blacksmith/releases/latest/download/blacksmith-zed.json -o ~/.config/zed/themes/blacksmith.json
+```
+
+Then restart Zed or reload the window, open the theme picker, and select **Blacksmith**.
+
+</details>
+
+<details>
+<summary><strong>Warp</strong></summary>
+
+```bash
+mkdir -p ~/.warp/themes && curl -fL https://github.com/codybarr/blacksmith/releases/latest/download/blacksmith-warp.yaml -o ~/.warp/themes/blacksmith.yaml
+```
+
+Then restart Warp or wait a few moments for the theme list to refresh, and select **Blacksmith** in Warp's appearance settings.
+
+</details>
+
+<details>
+<summary><strong>Lazygit</strong></summary>
+
+```bash
+mkdir -p "$HOME/Library/Application Support/lazygit" && curl -fL https://github.com/codybarr/blacksmith/releases/latest/download/blacksmith-lazygit.yml -o "$HOME/Library/Application Support/lazygit/blacksmith.yml"
+```
+
+This downloads the generated Lazygit theme file as `blacksmith.yml`. If you want to use it as your full Lazygit config, rename it to `config.yml`. If you already have a Lazygit config, copy just the `gui.theme` block from `blacksmith.yml` into your existing `config.yml`.
+
+</details>
+
+<details>
+<summary><strong>pi</strong></summary>
+
+```bash
+mkdir -p ~/.pi/agent/themes && curl -fL https://github.com/codybarr/blacksmith/releases/latest/download/blacksmith-pi.json -o ~/.pi/agent/themes/blacksmith.json
+```
+
+Then select `blacksmith` in pi via `/settings`.
+
+</details>
+
 ## Build themes
 
 ```bash
@@ -62,61 +108,5 @@ Generated files:
 - `dist/warp/blacksmith.yaml`
 - `dist/lazygit/blacksmith.yml`
 - `dist/pi/blacksmith.json`
-
-## Install in Zed
-
-For a local/manual Zed install, copy the generated theme into your Zed themes directory:
-
-```bash
-mkdir -p ~/.config/zed/themes
-cp dist/zed/blacksmith.json ~/.config/zed/themes/
-```
-
-Then restart Zed or reload the window, open the theme picker, and select **Blacksmith**.
-
-## Install in Warp
-
-Copy the generated Warp theme into your local Warp themes directory:
-
-```bash
-mkdir -p ~/.warp/themes
-cp dist/warp/blacksmith.yaml ~/.warp/themes/
-```
-
-Then restart Warp or wait a few moments for the theme list to refresh, and select **Blacksmith** in Warp's appearance settings.
-
-## Install in Lazygit
-
-If you want to use Blacksmith as your Lazygit theme config on macOS:
-
-```bash
-mkdir -p "$HOME/Library/Application Support/lazygit"
-cp dist/lazygit/blacksmith.yml "$HOME/Library/Application Support/lazygit/config.yml"
-```
-
-If you already have a Lazygit config, copy just the `gui.theme` block from `dist/lazygit/blacksmith.yml` into your existing `config.yml` instead of overwriting the whole file.
-
-## Install in pi
-
-Copy the generated pi theme into your global pi themes directory:
-
-```bash
-mkdir -p ~/.pi/agent/themes
-cp dist/pi/blacksmith.json ~/.pi/agent/themes/
-```
-
-Then select `blacksmith` in pi via `/settings`.
-
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
-
-```bash
-bun run index.ts
-```
 
 This project was created using `bun init` in bun v1.3.5. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
