@@ -4,6 +4,7 @@ node_modules
 # output
 out
 dist
+release-assets
 *.tgz
 
 # code coverage

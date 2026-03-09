@@ -52,7 +52,9 @@ Requirements:
 Workflow:
 
 - `.github/workflows/release.yml` runs on tags matching `v*`
-- it installs dependencies, runs `bun run build:all`, and publishes a GitHub release with generated notes
+- it installs dependencies and runs `bun run build:all`
+- it copies release artifacts to uniquely named files to avoid GitHub asset filename collisions
+- it publishes a GitHub release with generated notes
 
 Generated files:
 
