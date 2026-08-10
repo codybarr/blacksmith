@@ -32,6 +32,7 @@ jobs:
           mkdir -p release-assets
           cp dist/zed/blacksmith.json release-assets/blacksmith-zed.json
           cp dist/warp/blacksmith.yaml release-assets/blacksmith-warp.yaml
+          cp dist/ghostty/Blacksmith release-assets/blacksmith-ghostty
           cp dist/lazygit/blacksmith.yml release-assets/blacksmith-lazygit.yml
           cp dist/pi/blacksmith.json release-assets/blacksmith-pi.json
 
@@ -42,5 +43,6 @@ jobs:
           files: |
             release-assets/blacksmith-zed.json
             release-assets/blacksmith-warp.yaml
+            release-assets/blacksmith-ghostty
             release-assets/blacksmith-lazygit.yml
             release-assets/blacksmith-pi.json

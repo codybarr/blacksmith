@@ -45,6 +45,17 @@ Then restart Warp or wait a few moments for the theme list to refresh, and selec
 </details>
 
 <details>
+<summary><strong>Ghostty</strong></summary>
+
+```bash
+mkdir -p ~/.config/ghostty/themes && curl -fL https://github.com/codybarr/blacksmith/releases/latest/download/blacksmith-ghostty -o ~/.config/ghostty/themes/Blacksmith
+```
+
+Set `theme = Blacksmith` in your Ghostty configuration, then reload the configuration.
+
+</details>
+
+<details>
 <summary><strong>Lazygit</strong></summary>
 
 ```bash
@@ -71,6 +82,7 @@ Then select `blacksmith` in pi via `/settings`.
 ```bash
 bun run build:zed
 bun run build:warp
+bun run build:ghostty
 bun run build:lazygit
 bun run build:pi
 bun run build:all
@@ -106,6 +118,7 @@ Generated files:
 
 - `dist/zed/blacksmith.json`
 - `dist/warp/blacksmith.yaml`
+- `dist/ghostty/Blacksmith`
 - `dist/lazygit/blacksmith.yml`
 - `dist/pi/blacksmith.json`
 

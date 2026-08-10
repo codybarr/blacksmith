@@ -7,6 +7,7 @@ import { basename } from "node:path";
 const DIST_ASSETS = [
   "dist/zed/blacksmith.json",
   "dist/warp/blacksmith.yaml",
+  "dist/ghostty/Blacksmith",
   "dist/lazygit/blacksmith.yml",
   "dist/pi/blacksmith.json",
 ] as const;
