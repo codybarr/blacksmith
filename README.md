@@ -19,6 +19,7 @@ Blacksmith is a high-contrast (but not harsh) developer theme built around rich 
 - [Zed themes](https://zed.dev/docs/extensions/themes)
 - [pi themes](https://github.com/badlogic/pi-mono/blob/main/packages/coding-agent/docs/themes.md)
 - [Lazygit config and theming](https://github.com/jesseduffield/lazygit/blob/master/docs/Config.md)
+- [Helix themes](https://docs.helix-editor.com/themes.html)
 
 ## Install
 
@@ -67,6 +68,17 @@ This downloads the generated Lazygit theme file as `blacksmith.yml`. If you want
 </details>
 
 <details>
+<summary><strong>Helix</strong></summary>
+
+```bash
+mkdir -p ~/.config/helix/themes && curl -fL https://github.com/codybarr/blacksmith/releases/latest/download/blacksmith-helix.toml -o ~/.config/helix/themes/blacksmith.toml
+```
+
+Select it with `:theme blacksmith`, or add `theme = "blacksmith"` to the top of `~/.config/helix/config.toml`.
+
+</details>
+
+<details>
 <summary><strong>pi</strong></summary>
 
 ```bash
@@ -84,6 +96,7 @@ bun run build:zed
 bun run build:warp
 bun run build:ghostty
 bun run build:lazygit
+bun run build:helix
 bun run build:pi
 bun run build:all
 ```
@@ -120,6 +133,7 @@ Generated files:
 - `dist/warp/blacksmith.yaml`
 - `dist/ghostty/Blacksmith`
 - `dist/lazygit/blacksmith.yml`
+- `dist/helix/blacksmith.toml`
 - `dist/pi/blacksmith.json`
 
 This project was created using `bun init` in bun v1.3.5. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
