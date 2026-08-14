@@ -134,8 +134,6 @@ const theme = `# Blacksmith — a gold and charcoal theme for Helix.
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 "diagnostic.deprecated" = { modifiers = ["crossed_out"] }
 
-rainbow = ["accent_0", "keyword", "success", "info", "string", "accent_2"]
-
 [palette]
 bg_0 = "${color("bg.0")}"
 bg_1 = "${color("bg.1")}"
